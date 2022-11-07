@@ -10,7 +10,7 @@ import java.util.List;
 
 public class BaseFunc {
     private WebDriver driver;
-    private WebDriverWait wait;
+    public WebDriverWait wait;
 
     public BaseFunc() {
         System.setProperty("webdriver.chrome.driver", "C://Users//dmittere//chromedriver.exe");
@@ -42,7 +42,7 @@ public class BaseFunc {
         return elements.size() != 0;
     }
 
-    public int getChildElementsCount(By parent, By child){
+    public int getChildElementsCount(By parent, By child) {
         return driver.findElement(parent).findElements(child).size();
     }
 }

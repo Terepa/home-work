@@ -6,7 +6,6 @@ import webdriver.BaseFunc;
 import pageobject.pages.VacanciesPage;
 
 
-
 public class TaskTest {
     private final String HOME_PAGE_URL = "https://ctco.lv/";
 
